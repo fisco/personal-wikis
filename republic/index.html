@@ -44,7 +44,7 @@
 <meta property="og:description" content="Content by David Fisco">
 <meta property="og:site_name" content="David Fisco">
 
-<meta property="article:modified_time" content="2015-08-19T16:26:52-04:00">
+<meta property="article:modified_time" content="2015-08-24T23:28:29-04:00">
 <meta property="article:section" content="Personal Wikis">
 
 <!-- <meta property="fb:admins" content="FACEBOOK NUMBERIC ID"> -->
@@ -361,11 +361,11 @@ jQuery(function($) {
 
     <link rel="dns-prefetch" href="//dl.dropboxusercontent.com">
     <link rel="dns-prefetch" href="//disqus.com">
-    
+
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "7b5ac0a6-a858-424a-8836-7b6bf26134bd", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-    
+
 </head>
 
 <body itemscope 
@@ -400,12 +400,12 @@ itemref='schema-creativework-datepublished schema-creativework-datemodified sche
   </span>
 </span>
 </span>
-  <div class="pull-right-md-lg"><div class="btn-group" role="group" style="margin-top: .25em;" aria-label="fiscoSiteButtons">
+  <div class="pull-right-md-lg"><div class="btn-group" id="fisco-site-bar-button-group" role="group" style="margin-top: .25em;" aria-label="fiscoSiteButtons">
   <div class="btn-group" role="group">
   <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <b>MENU</b>
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
     <li><a href="http://www.davidfisco.com/about.html">About David Fisco</a></li>
     <li role="separator" class="divider"></li>
     <li class="dropdown-header">Site Topics:</li>
@@ -426,7 +426,7 @@ itemref='schema-creativework-datepublished schema-creativework-datemodified sche
   <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <b>CONTACT</b>
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu2">
     <li class='' id='david-fiscos-email-address-button' itemscope><a class="captcha_reveal_email_david_fisco email-button-fisco" href="http://www.google.com/recaptcha/mailhide/d?k=01s9_vxXcu4bIHxZ3RnEGCag==&amp;c=ErkK_CpjGlH_OfuGIWzHgizVQgRzpvHItJvrEyCadl4=" id="schema-person-david-fisco-email" itemprop="email">Get David Fisco's Email Address</a></li>
     <li><a href="https://docs.google.com/a/davidfisco.com/forms/d/1owZHNQmZIrgWpuz3G6peKm-9JV8Ulypz4K5VLTdHen8/viewform" target="_blank">Email David Fisco via Web Form</a></li>
     <li role="separator" class="divider"></li>
@@ -495,6 +495,15 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
 </script>
 
 </div>
+<script>
+  $('#fisco-site-bar-button-group .dropdown-toggle').on('click', function(){
+    if($(window).width() < 992) {
+      $('#fisco-site-bar-button-group .dropdown-menu').removeClass('pull-right');
+    } else {
+      $('#fisco-site-bar-button-group .dropdown-menu').addClass('pull-right');
+    }
+  });
+</script>
 </div>
 </div>
 
@@ -595,21 +604,32 @@ Open the wiki in a new window or tab in your browser. You will need to use the â
 </div>
 </div>
             <div id='after-payload-fisco'></div>
+            
+              <div class='text-center' style="margin-top: 2em;">
+                <span class='st_sharethis' displayText='ShareThis'></span>
+                <span class='st_facebook' displayText='Facebook'></span>
+                <span class='st_twitter' displayText='Tweet'></span>
+                <span class='st_linkedin' displayText='LinkedIn'></span>
+                <span class='st_googleplus' displayText='Google +'></span>
+                <span class='st_email' displayText='Email'></span>
+              </div>
+            
+            <div class="small text-muted" style="margin-top: 4em;">
+              
+
+
+
+  
+  
+
+
+
+            </div>
         </div>
     </main>
 
     
-    
-    
-    <div class='container text-center' style="margin-top: 2em;">
-        <span class='st_sharethis' displayText='ShareThis'></span>
-        <span class='st_facebook' displayText='Facebook'></span>
-        <span class='st_twitter' displayText='Tweet'></span>
-        <span class='st_linkedin' displayText='LinkedIn'></span>
-        <span class='st_googleplus' displayText='Google +'></span>
-        <span class='st_email' displayText='Email'></span>
-    </div>
-    
+
 
     <meta id='schema-thing-url' itemprop="url" content="http://personal-wikis.davidfisco.com/republic/" />
 
