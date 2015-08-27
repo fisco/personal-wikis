@@ -44,7 +44,7 @@
 <meta property="og:description" content="Content by David Fisco">
 <meta property="og:site_name" content="David Fisco">
 
-<meta property="article:modified_time" content="2015-08-24T23:28:29-04:00">
+<meta property="article:modified_time" content="2015-08-26T23:18:54-04:00">
 <meta property="article:section" content="Personal Wikis">
 
 <!-- <meta property="fb:admins" content="FACEBOOK NUMBERIC ID"> -->
@@ -366,6 +366,9 @@ jQuery(function($) {
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "7b5ac0a6-a858-424a-8836-7b6bf26134bd", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
+    <script>
+    </script>
+
 </head>
 
 <body itemscope 
@@ -452,7 +455,7 @@ itemref='schema-creativework-datepublished schema-creativework-datemodified sche
         <h4 class="modal-title" id="searchDavidFiscoDialogLabel">Search DavidFisco.com:</h4>
       </div>
       <div class="modal-body">
-        <form id="site-search-form">
+        <form class="fisco-site-search-form" id="site-search-form">
           <input type="text" class="form-control" id="searchDavidFiscoDialogInput" placeholder="Search terms">
         </form>
       </div>
@@ -463,24 +466,10 @@ itemref='schema-creativework-datepublished schema-creativework-datemodified sche
     </div>
   </div>
 </div>
+
 <script>
-function _goToSearchPage(searchUrl) {
-    window.location.href = searchUrl
-}
-
-function reportGoogleAnalyticsSearchEvent(jQueryObject, searchUrl) {
-  var submitObject = {};
-  ga && jQueryObject || _goToSearchPage(searchUrl), submitObject.hitCallback = function() {
-      _goToSearchPage(searchUrl)
-  }, submitObject.hitType = "event", submitObject.eventCategory = jQueryObject.attr("id"), submitObject.eventAction = "search", submitObject.eventLabel = jQueryObject.find("input.form-control").val(), ga("send", submitObject)
-}
-
 $('#searchDavidFiscoDialog').on('shown.bs.modal', function () {
   $('#searchDavidFiscoDialogInput').focus()
-});
-
-$("#site-search-form").submit(function(event) {
-  reportGoogleAnalyticsSearchEvent($(this), "https://www.google.com/search?q=" + encodeURIComponent($(this).find("input.form-control").val()) + "+site%3Adavidfisco.com"), event.preventDefault()
 });
 
 $('#searchDavidFiscoDialogSearchButton').on('click', function () {
@@ -508,16 +497,31 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
 </div>
 
   <ol class="breadcrumb text-center" style="margin-bottom: .4em !important;">
-  <li id='home-button'  itemscope><a href="http://www.davidfisco.com" id='schema-person-david-fisco-url' itemprop="url" >Home</a></li>
+  <li id='home-button'
+     itemscope><a href="http://www.davidfisco.com" id='schema-person-david-fisco-url' itemprop="url" >
+      
+          Home
+      
+    </a>
+  </li>
   
     
       
-      <li id='main-topic-label' itemscope><a href="http://personal-wikis.davidfisco.com" id='schema-collectionpage-sitetopic-url' itemprop='url' ><span itemscope><span itemprop='articleSection' id='schema-article-articlesection'>Personal Wikis</span></span></a></li>
+        <li id='main-topic-label' itemscope>
+          <a href="http://personal-wikis.davidfisco.com" id='schema-collectionpage-sitetopic-url' itemprop='url'>
+            <span itemscope>
+              <span itemprop='articleSection' id='schema-article-articlesection'>Personal Wikis</span>
+            </span>
+          </a>
+        </li>
       
     
     
-      <li class="active" itemprop="headline name"><span id='fisco-page-title-in-breadcrumb'>Meno: Personal Wiki</span></li>
+      <li class="active" itemprop="headline name">
+        <span id='fisco-page-title-in-breadcrumb'>Meno: Personal Wiki</span>
+      </li>
     
+  
   
 </ol>
 
@@ -605,7 +609,7 @@ Open the wiki in a new window or tab in your browser. You will need to use the â
 </div>
             <div id='after-payload-fisco'></div>
             
-              <div class='text-center' style="margin-top: 2em;">
+              <div class='text-center' style="clear: both; margin-top: 2em;">
                 <span class='st_sharethis' displayText='ShareThis'></span>
                 <span class='st_facebook' displayText='Facebook'></span>
                 <span class='st_twitter' displayText='Tweet'></span>
@@ -619,8 +623,7 @@ Open the wiki in a new window or tab in your browser. You will need to use the â
 
 
 
-  
-  
+
 
 
 
@@ -648,6 +651,41 @@ Open the wiki in a new window or tab in your browser. You will need to use the â
 
     
     <script src="https://dl.dropboxusercontent.com/u/4236486/davidfisco.com/scripts/all-min.js"></script>
+    <script>
+    (function () {
+        "use strict";
+
+        function _goToSearchPage(searchUrl) {
+            window.location.href = searchUrl;
+        }
+
+        function reportGoogleAnalyticsSearchEvent(jQueryObject, searchUrl) {
+            var submitObject = {};
+
+            ga && jQueryObject || _goToSearchPage(searchUrl);
+
+            try {
+              ga.getAll();
+              submitObject.hitCallback = function() {
+                  _goToSearchPage(searchUrl);
+              }
+              submitObject.hitType = "event";
+              submitObject.eventCategory = jQueryObject.attr("id");
+              submitObject.eventAction = "search";
+              submitObject.eventLabel = jQueryObject.find("input.form-control").val();
+              ga("send", submitObject);
+            } catch (err) {
+              _goToSearchPage(searchUrl);
+            }
+        }
+
+        $(".fisco-site-search-form").submit(function(event) {
+            event.preventDefault();
+            reportGoogleAnalyticsSearchEvent($(this), "https://www.google.com/search?q=" + encodeURIComponent($(this).find("input.form-control").val()) + "+site%3A" + "davidfisco.com");
+        });
+    })();
+    </script>
+
     <script async data-dropbox-src='https://dl.dropboxusercontent.com/u/4236486/davidfisco.com/scripts/topics-2-min.js'>!function(){"use strict";var topicDatabase={};topicDatabase["Dave's Choice Words"]={homepage:"http://generalapps.davidfisco.com/dcw",icon:'<i class="icon-font fisco-bootstrap-menu-icon-left"></i>'},topicDatabase.Foodie={homepage:"http://foodie.davidfisco.com",icon:'<i class="icon-food fisco-bootstrap-menu-icon-left"></i>'},topicDatabase["Language Arts"]={homepage:"http://languagearts.davidfisco.com",icon:'<i class="icon-file-alt fisco-bootstrap-menu-icon-left"></i>'},topicDatabase.Philosophy={homepage:"http://philosophy.davidfisco.com",icon:'<i class="icon-lightbulb fisco-bootstrap-menu-icon-left"></i>'},topicDatabase.Productivity={homepage:"http://productivity.davidfisco.com",icon:'<i class="icon-time fisco-bootstrap-menu-icon-left"></i>'},topicDatabase["Rote: Shakespeare"]={homepage:"http://rote.davidfisco.com",icon:'<i class="icon-quote-left fisco-bootstrap-menu-icon-left"></i>'},topicDatabase.Software={homepage:"http://software.davidfisco.com",icon:'<i class="icon-desktop fisco-bootstrap-menu-icon-left"></i>'},topicDatabase.Synonymical={homepage:"http://generalapps.davidfisco.com/synonymical/play",icon:'<i class="icon-copy fisco-bootstrap-menu-icon-left"></i>'},topicDatabase["Dr. Publisher"]={homepage:"http://generalapps.davidfisco.com/drpublisher",icon:'<i class="icon-copy fisco-bootstrap-menu-icon-left"></i>'},topicDatabase["Dave's Choice Words: Sort!"]={homepage:"http://generalapps.davidfisco.com/dcw/sort",icon:'<i class="fa fa-sort-alpha-asc fisco-bootstrap-menu-icon-left"></i>'},_.size(topicDatabase)>0&&(_.each(_.sortBy(_.keys(topicDatabase),function(value){return value.toLowerCase()}),function(key){$("<li>").append($("<a>",{href:topicDatabase[key].homepage,html:topicDatabase[key].icon+key})).appendTo($("li#topicsLI > ul.dropdown-menu"))}),$("li#topicsLI").removeClass("hide"))}();</script>
 
     <script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-528fa75b7950b9c2' type='text/javascript'></script>
