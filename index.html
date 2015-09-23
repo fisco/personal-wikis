@@ -44,7 +44,7 @@
 <meta property="og:description" content="Content by David Fisco">
 <meta property="og:site_name" content="David Fisco">
 
-<meta property="article:modified_time" content="2015-08-26T23:18:54-04:00">
+<meta property="article:modified_time" content="2015-09-22T22:06:35-04:00">
 <meta property="article:section" content="Personal Wikis">
 
 <!-- <meta property="fb:admins" content="FACEBOOK NUMBERIC ID"> -->
@@ -371,7 +371,7 @@ jQuery(function($) {
 
 </head>
 
-<body itemscope 
+<body class="container" itemscope 
 itemtype='
 http://schema.org/CollectionPage
 ' 
@@ -393,8 +393,8 @@ schema-collectionpage-site
 
 
 
-    <div class="container" id="fisco-page-header">
-  <div style="margin-top: .25em; margin-bottom: .3em;">
+    <div class="row" id="fisco-page-header">
+  <div style="margin-top: .75em; margin-bottom: .3em;">
   <span style="font-size: 1.8em;"><span style="font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase;" itemscope>
   <span id='schema-person-david-fisco-name' itemprop="name">
     <span style="font-weight: 100;  letter-spacing: .015em; opacity: .7;" itemprop='givenName'>David</span><span style="display: none;"> </span><span style="  font-weight: 900; letter-spacing: .07em; margin-left: .05em;" itemprop='familyName'>Fisco</span>
@@ -521,46 +521,78 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
     
 
     <main>
-        <div class='container'>
             <div id='before-payload-fisco'></div>
-            <div id='payload-fisco row'><h4 itemprop='description'>For
+            <div id='payload-fisco'><h4 class='row' itemprop='description'>For
     <span id='schema-creativework-audience' itemprop='audience' itemscope itemtype='http://schema.org/Audience'>
         <span itemprop='audienceType'> learners</span>
     </span> of all levels, a collection of
     <span itemprop='specialty' itemscope itemtype='http://schema.org/Specialty'>
         <span itemprop='description name'> personal wikis</span>
     </span> developed by David Fisco.</h4>
+    
+<style>
+@media (min-width: 992px) {
+    #list-div {
+        -moz-column-count: 2;
+        -webkit-column-count: 2; 
+        column-count: 2;
+    }
+}
 
-<div id='list-div' itemprop='mainContentOfPage'>
+#list-div .author-group {
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    column-break-inside: avoid;
+    page-break-inside: avoid;
+}
+#list-div h3:first-child {
+    margin-top: 0;
+}
+#list-div ul.list-group {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+</style>
 
+<div class='row' id='list-div' itemprop='mainContentOfPage' style='margin-bottom: 5em; margin-top: 3em;'>
+
+<div class='author-group'>
 <h3>Hamilton, Alexander</h3>
 <ul class="list-group">
     <a href="./federalistpapers" itemprop='relatedLink'>
       <li class="list-group-item">The Federalist Papers</li>
     </a>
 </ul>
+</div>
 
+<div class='author-group'>
 <h3>Irving, Washington</h3>
 <ul class="list-group">
     <a href="./sketch-book-of-geoffrey-crayon" itemprop='relatedLink'>
       <li class="list-group-item">The Sketch Book of Geoffrey Crayon, Gent.</li>
     </a>
 </ul>
+</div>
 
+<div class='author-group'>
 <h3>Jay, John</h3>
 <ul class="list-group">
     <a href="./federalistpapers" itemprop='relatedLink'>
       <li class="list-group-item">The Federalist Papers</li>
     </a>
 </ul>
+</div>
 
+<div class='author-group'>
 <h3>Madison, James</h3>
 <ul class="list-group">
     <a href="./federalistpapers" itemprop='relatedLink'>
       <li class="list-group-item">The Federalist Papers</li>
     </a>
 </ul>
+</div>
 
+<div class='author-group'>
 <h3>Plato</h3>
 <ul class="list-group">
     <a href="./euthyphro" itemprop='relatedLink'>
@@ -577,14 +609,18 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
       <li class="list-group-item">Republic</li>
     </a>
 </ul>
+</div>
 
+<div class='author-group'>
 <h3>Rand, Ayn</h3>
 <ul class="list-group">
     <a href="./anthem" itemprop='relatedLink'>
       <li class="list-group-item">Anthem</li>
     </a>
 </ul>
+</div>
 
+<div class='author-group'>
 <h3>Shakespeare, William</h3>
 <ul class="list-group">
     <a href="./hamlet" itemprop='relatedLink'>
@@ -596,6 +632,7 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
       <li class="list-group-item">A Midsummer Night's Dream</li>
     </a>
 </ul>
+</div>
 
 </div>
 </div>
@@ -620,7 +657,6 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
 
 
             </div>
-        </div>
     </main>
 
     
