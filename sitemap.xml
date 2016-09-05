@@ -1,73 +1,122 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/anthem/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/antonyandcleopatra/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/christmascarol/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/declarationofindependence/</loc>
-        <lastmod>2016-04-12T23:25:11-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/euthyphro/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/federalistpapers/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/hamlet/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/</loc>
-        <lastmod>2016-07-28T19:58:42-04:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.0</priority>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/macbeth/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/meno/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/midsummernightsdream/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/organon/</loc>
-        <lastmod>2016-05-18T17:33:46-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/politics/</loc>
-        <lastmod>2016-06-01T20:12:51-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/republic/</loc>
-        <lastmod>2016-04-05T20:13:44-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/rhetoric/</loc>
-        <lastmod>2016-04-05T20:12:47-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/sketch-book-of-geoffrey-crayon/</loc>
-        <lastmod>2016-02-28T15:47:24-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://personal-wikis.davidfisco.com/themalcontent/</loc>
-        <lastmod>2016-07-28T19:21:11-04:00</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://personal-wikis.davidfisco.com/anthem/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/antonyandcleopatra/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/christmascarol/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/declarationofindependence/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/euthyphro/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/federalistpapers/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/hamlet/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/macbeth/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/meno/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/midsummernightsdream/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/organon/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/politics/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/republic/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/rhetoric/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/sketch-book-of-geoffrey-crayon/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/themalcontent/</loc>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/a-christmas-carol.html</loc>
+<lastmod>2015-12-02T16:36:13-05:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/anthem-wiki-with-audio.html</loc>
+<lastmod>2015-02-19T15:18:33-05:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/anthem-wiki.html</loc>
+<lastmod>2015-02-19T15:18:26-05:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/antony-and-cleopatra-wiki.html</loc>
+<lastmod>2015-09-30T15:40:47-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/declarationofindependence-wiki.html</loc>
+<lastmod>2016-04-12T16:22:59-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/euthyphro-wiki.html</loc>
+<lastmod>2015-02-19T20:40:49-05:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/federalistpapers-wiki.html</loc>
+<lastmod>2015-03-30T15:44:38-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/hamlet-wiki.html</loc>
+<lastmod>2015-02-17T13:32:38-05:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/macbeth-wiki.html</loc>
+<lastmod>2015-10-06T16:21:12-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/meno-wiki.html</loc>
+<lastmod>2015-02-17T13:43:07-05:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/midsummer-nights-dream-wiki.html</loc>
+<lastmod>2015-08-24T22:22:24-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/organon-wiki.html</loc>
+<lastmod>2016-05-18T20:40:37-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/politics-wiki.html</loc>
+<lastmod>2016-06-01T19:27:06-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/republic-wiki.html</loc>
+<lastmod>2015-03-02T16:58:10-05:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/rhetoric-wiki.html</loc>
+<lastmod>2016-04-05T19:49:48-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/sketch-book-of-geoffrey-crayon/Sketch-Book-of-Geoffrey-Crayon-wiki.html</loc>
+<lastmod>2015-08-14T18:55:26-04:00</lastmod>
+</url>
+<url>
+<loc>https://personal-wikis.davidfisco.com/files/themalcontent-wiki.html</loc>
+<lastmod>2016-07-27T18:43:18-04:00</lastmod>
+</url>
 </urlset>
