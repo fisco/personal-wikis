@@ -614,12 +614,20 @@ if ($('#site-header-breadcrumbs span').length > 0) {
           itemscope itemtype="https://schema.org/WebPageElement">
       <div class="col-xs-12">
         <style>
-@media (min-width: 992px) {
-    #list-div {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
+@media (min-width: 768px) {
+  #list-div-disabled {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+  }
+}
+
+@media (min-width: 1250px) {
+  #list-div-disabled {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+  }
 }
 
 #list-div .author-group {
@@ -638,289 +646,367 @@ if ($('#site-header-breadcrumbs span').length > 0) {
 </style>
 
 
-<h4>For learners of all levels, a collection of personal wikis developed by David Fisco.</h4>
+<i>For learners of all levels, a collection of personal wikis developed by David Fisco.</i>
 
 <div id="list-div-disabled" style="margin-bottom: 5em; margin-top: 3em;">
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Aristotle
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+      
+        Aristotle
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./organon">
+              <li>Organon</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./politics">
+              <li>Politics</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./rhetoric">
+              <li>Rhetoric</li>
+            </a>
+          </ul>
+        
+      </div>
+      
     </div>
-    <div class="panel-body">
-      
-        <ul>
-          <a href="./organon">
-            <li>Organon</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./politics">
-            <li>Politics</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./rhetoric">
-            <li>Rhetoric</li>
-          </a>
-        </ul>
-      
-    </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Dickens, Charles
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./christmascarol">
-            <li>A Christmas Carol</li>
-          </a>
-        </ul>
+        Dickens, Charles
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./christmascarol">
+              <li>A Christmas Carol</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Hamilton, Alexander
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./federalistpapers">
-            <li>The Federalist Papers</li>
-          </a>
-        </ul>
+        Hamilton, Alexander
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./federalistpapers">
+              <li>The Federalist Papers</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Homer
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+      
+        Homer
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./iliad">
+              <li>Iliad</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./odyssey">
+              <li>Odyssey</li>
+            </a>
+          </ul>
+        
+      </div>
+      
     </div>
-    <div class="panel-body">
-      
-        <ul>
-          <a href="./iliad">
-            <li>Iliad</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./odyssey">
-            <li>Odyssey</li>
-          </a>
-        </ul>
-      
-    </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Irving, Washington
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./sketch-book-of-geoffrey-crayon">
-            <li>The Sketch Book of Geoffrey Crayon, Gent.</li>
-          </a>
-        </ul>
+        Irving, Washington
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./sketch-book-of-geoffrey-crayon">
+              <li>The Sketch Book of Geoffrey Crayon, Gent.</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      James, William
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+      
+        James, William
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./essaysradicalempiricism">
+              <li>Essays in Radical Empiricism</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./pragmatism">
+              <li>Pragmatism: A New Name for Some Old Ways of Thinking</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./principlesofpsychology">
+              <li>The Principles of Psychology</li>
+            </a>
+          </ul>
+        
+      </div>
+      
     </div>
-    <div class="panel-body">
-      
-        <ul>
-          <a href="./essaysradicalempiricism">
-            <li>Essays in Radical Empiricism</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./pragmatism">
-            <li>Pragmatism: A New Name for Some Old Ways of Thinking</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./principlesofpsychology">
-            <li>The Principles of Psychology</li>
-          </a>
-        </ul>
-      
-    </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Jay, John
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./federalistpapers">
-            <li>The Federalist Papers</li>
-          </a>
-        </ul>
+        Jay, John
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./federalistpapers">
+              <li>The Federalist Papers</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Jefferson, Thomas
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./declarationofindependence">
-            <li>United States Declaration of Independence</li>
-          </a>
-        </ul>
+        Jefferson, Thomas
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./declarationofindependence">
+              <li>United States Declaration of Independence</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Madison, James
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./federalistpapers">
-            <li>The Federalist Papers</li>
-          </a>
-        </ul>
+        Madison, James
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./federalistpapers">
+              <li>The Federalist Papers</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Marston, John
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./themalcontent">
-            <li>The Malcontent</li>
-          </a>
-        </ul>
+        Marston, John
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./themalcontent">
+              <li>The Malcontent</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Plato
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+      
+        Plato
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./euthyphro">
+              <li>Euthyphro</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./meno">
+              <li>Meno</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./republic">
+              <li>Republic</li>
+            </a>
+          </ul>
+        
+      </div>
+      
     </div>
-    <div class="panel-body">
-      
-        <ul>
-          <a href="./euthyphro">
-            <li>Euthyphro</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./meno">
-            <li>Meno</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./republic">
-            <li>Republic</li>
-          </a>
-        </ul>
-      
-    </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Rand, Ayn
-    </div>
-    <div class="panel-body">
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
       
-        <ul>
-          <a href="./anthem">
-            <li>Anthem</li>
-          </a>
-        </ul>
+        Rand, Ayn
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./anthem">
+              <li>Anthem</li>
+            </a>
+          </ul>
+        
+      </div>
       
     </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-    
-      Shakespeare, William
+  <div style="margin-bottom: 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+      
+        Shakespeare, William
+      </div>
+      <div class="panel-body">
+        
+          <ul>
+            <a href="./antonyandcleopatra">
+              <li>Antony and Cleopatra</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./hamlet">
+              <li>Hamlet</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./macbeth">
+              <li>Macbeth</li>
+            </a>
+          </ul>
+        
+          <ul>
+            <a href="./midsummernightsdream">
+              <li>A Midsummer Night's Dream</li>
+            </a>
+          </ul>
+        
+      </div>
+      
     </div>
-    <div class="panel-body">
-      
-        <ul>
-          <a href="./antonyandcleopatra">
-            <li>Antony and Cleopatra</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./hamlet">
-            <li>Hamlet</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./macbeth">
-            <li>Macbeth</li>
-          </a>
-        </ul>
-      
-        <ul>
-          <a href="./midsummernightsdream">
-            <li>A Midsummer Night's Dream</li>
-          </a>
-        </ul>
-      
-    </div>
-    
+    <div style="height: 1.25vh;">&nbsp;</div>
   </div>
   
 </div>
