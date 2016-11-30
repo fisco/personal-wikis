@@ -512,46 +512,61 @@ jQuery(function($) {
   .breadcrumb-minor-fisco {
     text-transform: uppercase;
   }
+  #site-header-breadcrumbs-wrapper i.fa-angle-double-right {
+    color: #999999;
+  }
 </style>
 
-<!-- 36 -->
 
-<div class="row">
-<div class="col-xs-12" id="site-header-breadcrumbs-wrapper" style="margin-top 1vh;">
-<span class="breadcrumbs-with-title-fisco" id="site-header-breadcrumbs" itemid="#breadcrumblist" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+  <!-- 36 -->
   
-  
-    <span class="home-breadcrumb-fisco breadcrumb-minor-fisco" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a itemprop="item" href="https://www.davidfisco.com/" title="David Fisco's homepage">
-        <span itemprop="name">
-            Home
+  <div class="row">
+  <div class="col-xs-12" id="site-header-breadcrumbs-wrapper" style="margin-top 1vh;">
+    <a class="toggle-site-sidebar-fisco" title="Toggle Site Menu"><i class="fa fa-bars" aria-hidden="true" style="cursor: pointer;"></i></a>
+    <a class="breadcrumb-minor-fisco highlight-with-toggle-site-sidebar-fisco toggle-site-sidebar-fisco" style="cursor: pointer;" title="Toggle Site Menu">MENU</a>
+    <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span>
+    <span class="breadcrumbs-with-title-fisco" id="site-header-breadcrumbs" itemid="#breadcrumblist" itemscope itemtype="https://schema.org/BreadcrumbList">
+      
+      
+        <span class="home-breadcrumb-fisco breadcrumb-minor-fisco" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://www.davidfisco.com/" title="David Fisco's homepage">
+            <span itemprop="name">
+                Home
+            </span>
+            </a>
+            <meta itemprop="position" content="37" />
+            
         </span>
-        </a>
-        <meta itemprop="position" content="37" />
         
+      
+      
+        <span class="title-breadcrumb-fisco" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span id='fisco-page-title-in-breadcrumb' itemprop="name">
+             <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
+            <a itemprop="item" href="https://personal-wikis.davidfisco.com/" style="color: inherit; display: block; text-decoration: inherit; cursor: default; font-size: 3rem; line-height: normal;" title="Title of current page">
+              Personal Wikis
+            </a>
+            <meta itemprop="position" content="38" />
+          </span>
+        </span>
+      
     </span>
-    
-  
-  
-    <span class="title-breadcrumb-fisco" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <span id='fisco-page-title-in-breadcrumb' itemprop="name">
-         <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
-        <a itemprop="item" href="https://personal-wikis.davidfisco.com/" style="color: inherit; display: block; text-decoration: inherit; cursor: default; font-size: 3rem; line-height: normal;" title="Title of current page">
-          Personal Wikis
-        </a>
-        <meta itemprop="position" content="38" />
-      </span>
-    </span>
-  
-</span>
-</div>
-</div>
+  </div>
+  </div>
 
-<script>
-if ($('#site-header-breadcrumbs span').length > 0) {
-  $('#site-header-breadcrumbs').prepend('<a class="toggle-site-sidebar-fisco" title="Toggle Site Menu"><i class="fa fa-bars" aria-hidden="true" style="cursor: pointer;"></i></a><span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span>');
-}
-</script>
+  <script>
+  /* var elementsInBreadcrumbs = document.querySelectorAll("#site-header-breadcrumbs span");
+
+  if (elementsInBreadcrumbs.length > 0) {
+    var spanElement = document.createElement("span");
+
+    spanElement.innerHTML = '<a class="toggle-site-sidebar-fisco" title="Toggle Site Menu"><i class="fa fa-bars" aria-hidden="true" style="cursor: pointer;"></i></a><a class="toggle-site-sidebar-fisco" style="cursor: pointer; text-decoration: none;" title="Toggle Site Menu">&nbsp;</a><a class="highlight-with-toggle-site-sidebar-fisco toggle-site-sidebar-fisco" style="cursor: pointer;" title="Toggle Site Menu">MENU</a><span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span>';
+    document.querySelector("#site-header-breadcrumbs").insertBefore(spanElement, document.querySelector("#site-header-breadcrumbs").firstChild)
+  } */
+  </script>
+
+
 
 
 
@@ -646,7 +661,75 @@ if ($('#site-header-breadcrumbs span').length > 0) {
 </style>
 
 
-<i>For learners of all levels, a collection of personal wikis developed by David Fisco.</i>
+<i>For learners of all levels, a collection of personal wikis developed by 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</i><div id="authorInfoContactPopoverContent-0" hidden="">
+  
+    <p style="margin-bottom: 0;"><strong>Info:</strong></p>
+    <ul>
+      
+        <li><a href="https://www.davidfisco.com/about.html" title="Biography">Biography</a></li>
+      
+      
+        <li><a href="https://twitter.com/davidfisco" title="Twitter page">Twitter page</a></li>
+      
+    </ul>
+  
+  
+    <p style="margin-bottom: 0;"><strong>Contact:</strong></p>
+    <ul>
+      
+        <li><a href="https://docs.google.com/a/davidfisco.com/forms/d/e/1FAIpQLSdJu7rT0xvoAd7YobyuoLWVacAcooQXnGtsPKtJmmr_mtcx2g/viewform" title="Contact by webpage">Contact by webpage</a></li>
+      
+      
+        <li><a href="mailto:dave@davidfisco.com?subject=Feedback+from+website" title="Send email">Send email</a></li>
+      
+    </ul>
+  
+</div>
+
+<script>
+  $(function () {
+    $('#authorInfoContactPopover-0')
+    .popover({
+      html: true,
+      content: function() {
+        return $("#authorInfoContactPopoverContent-0").html();
+      },
+      title: function() {
+        return "<b>Info &amp; contact: David Fisco</b>";
+      },
+      viewport: function() {
+        return $('#payload-fisco');
+      }
+    });
+  });
+</script>
+
+
+<a href="#" role="button" data-container="body" data-trigger="click focus hover" data-placement="auto" data-toggle="popover" onmouseover="$(this).attr('title', 'Author information');" id="authorInfoContactPopover-0">David Fisco</a>
+.&lt;/i&gt;
 
 <div id="list-div-disabled" style="margin-bottom: 5em; margin-top: 3em;">
   
@@ -1326,6 +1409,23 @@ $(function($) {
   $(".avoid-premature-rendering-fisco").show();
 
   $('.collapseableSidebarPanel').collapse();
+});
+
+/* Use classes and CSS to underline all tagged links to the site menu. */
+document.addEventListener("DOMContentLoaded", function () {
+  var sidebarRevealers = document.querySelectorAll(".toggle-site-sidebar-fisco");
+  sidebarRevealers.forEach(function(element) {
+    element.addEventListener("mouseover", function() {
+      document.querySelectorAll(".highlight-with-toggle-site-sidebar-fisco").forEach(function(toUnderline) {
+        toUnderline.style.textDecoration = "underline";
+      });
+    });
+    element.addEventListener("mouseout", function() {
+      document.querySelectorAll(".highlight-with-toggle-site-sidebar-fisco").forEach(function(toUnderline) {
+        toUnderline.style.textDecoration = "none";
+      });
+    });
+  });
 });
 </script>
 

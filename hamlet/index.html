@@ -512,57 +512,72 @@ jQuery(function($) {
   .breadcrumb-minor-fisco {
     text-transform: uppercase;
   }
+  #site-header-breadcrumbs-wrapper i.fa-angle-double-right {
+    color: #999999;
+  }
 </style>
 
-<!-- 28 -->
 
-<div class="row">
-<div class="col-xs-12" id="site-header-breadcrumbs-wrapper" style="margin-top 1vh;">
-<span class="breadcrumbs-with-title-fisco" id="site-header-breadcrumbs" itemid="#breadcrumblist" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+  <!-- 28 -->
   
-  
-    <span class="home-breadcrumb-fisco breadcrumb-minor-fisco" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a itemprop="item" href="https://www.davidfisco.com/" title="David Fisco's homepage">
-        <span itemprop="name">
-            Home
-        </span>
-        </a>
-        <meta itemprop="position" content="29" />
-        
-    </span>
-    
-        <span class="topic-breadcrumb-fisco breadcrumb-minor-fisco" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-         <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
-        <a itemprop="item" href="https://personal-wikis.davidfisco.com" title="Topic page: Personal wikis">
+  <div class="row">
+  <div class="col-xs-12" id="site-header-breadcrumbs-wrapper" style="margin-top 1vh;">
+    <a class="toggle-site-sidebar-fisco" title="Toggle Site Menu"><i class="fa fa-bars" aria-hidden="true" style="cursor: pointer;"></i></a>
+    <a class="breadcrumb-minor-fisco highlight-with-toggle-site-sidebar-fisco toggle-site-sidebar-fisco" style="cursor: pointer;" title="Toggle Site Menu">MENU</a>
+    <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span>
+    <span class="breadcrumbs-with-title-fisco" id="site-header-breadcrumbs" itemid="#breadcrumblist" itemscope itemtype="https://schema.org/BreadcrumbList">
+      
+      
+        <span class="home-breadcrumb-fisco breadcrumb-minor-fisco" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://www.davidfisco.com/" title="David Fisco's homepage">
             <span itemprop="name">
-            Personal wikis
+                Home
             </span>
-        </a>
-        <meta itemprop="position" content="30" />
-        
+            </a>
+            <meta itemprop="position" content="29" />
+            
         </span>
-    
-  
-  
-    <span class="title-breadcrumb-fisco" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <span id='fisco-page-title-in-breadcrumb' itemprop="name">
-         <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
-        <a itemprop="item" href="https://personal-wikis.davidfisco.com/hamlet/" style="color: inherit; display: block; text-decoration: inherit; cursor: default; font-size: 3rem; line-height: normal;" title="Title of current page">
-           Hamlet: Personal Wiki
-        </a>
-        <meta itemprop="position" content="31" />
-      </span>
+        
+            <span class="topic-breadcrumb-fisco breadcrumb-minor-fisco" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+             <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
+            <a itemprop="item" href="https://personal-wikis.davidfisco.com" title="Topic page: Personal wikis">
+                <span itemprop="name">
+                Personal wikis
+                </span>
+            </a>
+            <meta itemprop="position" content="30" />
+            
+            </span>
+        
+      
+      
+        <span class="title-breadcrumb-fisco" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span id='fisco-page-title-in-breadcrumb' itemprop="name">
+             <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
+            <a itemprop="item" href="https://personal-wikis.davidfisco.com/hamlet/" style="color: inherit; display: block; text-decoration: inherit; cursor: default; font-size: 3rem; line-height: normal;" title="Title of current page">
+               Hamlet: Personal Wiki
+            </a>
+            <meta itemprop="position" content="31" />
+          </span>
+        </span>
+      
     </span>
-  
-</span>
-</div>
-</div>
+  </div>
+  </div>
 
-<script>
-if ($('#site-header-breadcrumbs span').length > 0) {
-  $('#site-header-breadcrumbs').prepend('<a class="toggle-site-sidebar-fisco" title="Toggle Site Menu"><i class="fa fa-bars" aria-hidden="true" style="cursor: pointer;"></i></a><span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span>');
-}
-</script>
+  <script>
+  /* var elementsInBreadcrumbs = document.querySelectorAll("#site-header-breadcrumbs span");
+
+  if (elementsInBreadcrumbs.length > 0) {
+    var spanElement = document.createElement("span");
+
+    spanElement.innerHTML = '<a class="toggle-site-sidebar-fisco" title="Toggle Site Menu"><i class="fa fa-bars" aria-hidden="true" style="cursor: pointer;"></i></a><a class="toggle-site-sidebar-fisco" style="cursor: pointer; text-decoration: none;" title="Toggle Site Menu">&nbsp;</a><a class="highlight-with-toggle-site-sidebar-fisco toggle-site-sidebar-fisco" style="cursor: pointer;" title="Toggle Site Menu">MENU</a><span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span>';
+    document.querySelector("#site-header-breadcrumbs").insertBefore(spanElement, document.querySelector("#site-header-breadcrumbs").firstChild)
+  } */
+  </script>
+
+
 
 
 
@@ -1040,6 +1055,23 @@ $(function($) {
   $(".avoid-premature-rendering-fisco").show();
 
   $('.collapseableSidebarPanel').collapse();
+});
+
+/* Use classes and CSS to underline all tagged links to the site menu. */
+document.addEventListener("DOMContentLoaded", function () {
+  var sidebarRevealers = document.querySelectorAll(".toggle-site-sidebar-fisco");
+  sidebarRevealers.forEach(function(element) {
+    element.addEventListener("mouseover", function() {
+      document.querySelectorAll(".highlight-with-toggle-site-sidebar-fisco").forEach(function(toUnderline) {
+        toUnderline.style.textDecoration = "underline";
+      });
+    });
+    element.addEventListener("mouseout", function() {
+      document.querySelectorAll(".highlight-with-toggle-site-sidebar-fisco").forEach(function(toUnderline) {
+        toUnderline.style.textDecoration = "none";
+      });
+    });
+  });
 });
 </script>
 
