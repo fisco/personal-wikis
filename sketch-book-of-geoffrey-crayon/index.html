@@ -327,7 +327,7 @@ iframe.googleDoc {
     font-style: italic;
   }
 
-  #payload-fisco h3 {
+  #payload-fisco :not(div.popover) h3 {
     font-size: 1.9rem;
   }
 
@@ -484,6 +484,24 @@ jQuery(function($) {
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700?text=DavidFisco" rel="stylesheet">
 
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.www.davidfisco.com","*.foodie.davidfisco.com","*.personal-wikis.davidfisco.com","*.philosophy.davidfisco.com","*.productivity.davidfisco.com"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.davidfisco.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.davidfisco.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
 </head>
 
 <body>
@@ -503,11 +521,24 @@ jQuery(function($) {
 
 
   <style>
+    a.page-title-in-breadcrumbs-fisco {
+      color: inherit;
+      cursor: default;
+      display: block;
+      font-size: 2rem;
+      line-height: normal;
+      text-decoration: inherit;
+    }
     .breadcrumb-minor-fisco {
       text-transform: uppercase;
     }
     #site-header-breadcrumbs-wrapper i.fa-angle-double-right {
       color: #999999;
+    }
+    @media (min-width: 550px) {
+      a.page-title-in-breadcrumbs-fisco {
+        font-size: 2.5rem;
+      }
     }
   </style>
 
@@ -543,7 +574,7 @@ jQuery(function($) {
         <span class="title-breadcrumb-fisco" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <span id='fisco-page-title-in-breadcrumb' itemprop="name">
              <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
-            <a itemprop="item" href="https://personal-wikis.davidfisco.com/sketch-book-of-geoffrey-crayon/" style="color: inherit; display: block; text-decoration: inherit; cursor: default; font-size: 3rem; line-height: normal;" title="Title of current page">
+            <a itemprop="item" class="page-title-in-breadcrumbs-fisco" href="https://personal-wikis.davidfisco.com/sketch-book-of-geoffrey-crayon/" title="Title of current page">
               The Sketch Book of Geoffrey Crayon, Gent: Personal Wiki
             </a>
             <meta itemprop="position" content="82" />
@@ -733,7 +764,7 @@ Download a compressed version of the wiki. If not already on your computer, you 
 
 
   </div>
-  
+
   
   <!-- Modal -->
 <div class="modal fade" id="searchDavidFiscoDialog" tabindex="-1" role="dialog" aria-labelledby="searchDavidFiscoDialogLabel">
